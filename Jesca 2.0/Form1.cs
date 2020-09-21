@@ -27,8 +27,9 @@ namespace Jesca_2._0
             comboBox1.Items.Add("30 Minutes");
             comboBox1.Items.Add("45 Minutes");
             comboBox1.Items.Add("1 Hour");
-            comboBox1.Items.Add("2 Hour");
-
+            comboBox1.Items.Add("1H and 30Min ");
+            comboBox1.Items.Add("1H and 45Min");
+            comboBox1.Items.Add("2 Hours");
             label1.Parent = pictureBox1;
             label1.BackColor = Color.Transparent;
 
@@ -41,12 +42,11 @@ namespace Jesca_2._0
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            
 
             switch (comboBox1.SelectedIndex) {
 
                 case 0:
-                    System.Diagnostics.Process.Start("shutdown", "/s /t 1800");
+                    System.Diagnostics.Process.Start("shutdown", "/s /t 1800");                  
                     break;
 
                 case 1:
@@ -58,18 +58,18 @@ namespace Jesca_2._0
                     break;
 
                 case 3:
+                    System.Diagnostics.Process.Start("shutdown", "/s /t 5400");
+                    break;
+
+                case 4:
+                    System.Diagnostics.Process.Start("shutdown", "/s /t 6300");
+                    break;
+
+                case 5:
                     System.Diagnostics.Process.Start("shutdown", "/s /t 7200");
                     break;
 
-
             }
-
-            if (comboBox1.SelectedItem == null) {
-
-                MessageBox.Show("You forgot the time dumbass!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
-            }
-
             {
 
 
@@ -78,8 +78,16 @@ namespace Jesca_2._0
 
 
         }
-
-
+        
+        }
     }
-}
+
+         
+
+
+            
+        
+
+     
+
 

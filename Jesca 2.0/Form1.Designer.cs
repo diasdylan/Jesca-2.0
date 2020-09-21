@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Resetbtn = new System.Windows.Forms.Button();
             this.Sleepbtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Error1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Error1)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             // Resetbtn
             // 
             this.Resetbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Resetbtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resetbtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Resetbtn.Location = new System.Drawing.Point(115, 137);
             this.Resetbtn.Name = "Resetbtn";
             this.Resetbtn.Size = new System.Drawing.Size(111, 34);
@@ -55,7 +55,7 @@
             // Sleepbtn
             // 
             this.Sleepbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sleepbtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sleepbtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sleepbtn.Location = new System.Drawing.Point(115, 97);
             this.Sleepbtn.Name = "Sleepbtn";
             this.Sleepbtn.Size = new System.Drawing.Size(111, 34);
@@ -64,24 +64,15 @@
             this.Sleepbtn.UseVisualStyleBackColor = true;
             this.Sleepbtn.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(115, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = " Select a time:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(115, 67);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(111, 26);
+            this.comboBox1.Size = new System.Drawing.Size(111, 35);
             this.comboBox1.TabIndex = 6;
             // 
             // pictureBox1
@@ -97,9 +88,19 @@
             // 
             this.Error1.ContainerControl = this;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = " Select a time:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -113,6 +114,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ESCA";
@@ -126,10 +128,10 @@
         #endregion
         private System.Windows.Forms.Button Resetbtn;
         private System.Windows.Forms.Button Sleepbtn;
-        private System.Windows.Forms.Label label1;
         protected System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ErrorProvider Error1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
